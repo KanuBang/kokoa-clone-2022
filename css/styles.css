@@ -2,10 +2,10 @@
 @import "reset.css";
 @import "variables.css";
 /*Components*/
-@import "components/status-bar.css";
-@import "components/nav-bar.css";
-@import "components/screen-header.css";
-@import "components/user-components.css";
+@import "components/status-bar.css"; /*와이파이 시간 배터리 CSS*/
+@import "components/nav-bar.css"; /*png2 맨아래 네비게이션 CSS*/
+@import "components/screen-header.css"; /*Friends와 아이콘 3개 CSS*/
+@import "components/user-components.css"; /* 본인, 친구, 채널 프로필 css*/
 /*Screens*/
 @import "screens/login.css";
 @import "screens/friends.css";

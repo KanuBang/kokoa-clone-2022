@@ -8,7 +8,7 @@
     <title>Friends Kokoa Talk</title>
 </head>
 <body>
-    
+    <!--여기는 상단 wifi 시간 배터리 등을 나타냅니다-->
     <div class = "status-bar">
         <div class = "status-bar__column">
             <span>No service</span>
@@ -27,6 +27,7 @@
         
     </div>
 
+    <!--여기는 Friends와 아이콘 3개를 나타냅니다-->
     <header class="screen-header">
         <h1 class="screen-header__title">Friends</h1>
         <div class="screen-header__icons">
@@ -36,13 +37,16 @@
         </div>
     </header>
 
+    <!--여기는 friend's name display를 나타냅니다-->
     <a id="friends-display-link">
         <i class="fa-solid fa-circle-info"></i>
         Friends's Names Display
         <i class="fa-solid fa-chevron-right fa-xs"></i>
     </a>
 
+    <!--main은 친구창을 나타냅니다. 친구창은 본인 프로필, 채널, 친구들로 이루어져 있습니다.-->
     <main class="friends-screen">
+        <!-- 본인 프로필을 나타냅니다-->
         <div class ="user-component">
             <div class="user-component__column">
                 <img src="https://newsimg.sedaily.com/2019/04/12/1VHU5WE5IS_2.jpg" class="user-component__avatar user-component__avatar--xl" 
@@ -55,12 +59,15 @@
             </div>
             <div class="user-component__column"></div>
         </div>
-            
+        <!-- 채널 바, 채널, 친구들을 나타냅니다-->
         <div class="friends-screen__channel">
+            <!--채널 바를 나타냅니다.-->
             <div class="friends-screen__channel-header">
                 <span>Channel</span>
                 <i class="fas fa-chevron-up fa-xs"></i>
             </div>
+
+            <!--채널과 친구들을 나타냅니다-->
             <div class ="user-component">
                 <div class="user-component__column">
                     <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/tottenham-hotspur-logo-vera-wahid.jpg" class="user-component__avatar user-component__avatar--sm" 
