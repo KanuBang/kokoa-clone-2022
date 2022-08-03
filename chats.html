@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friends Kokoa Talk</title>
+    <title>Chats Kokoa Talk</title>
 </head>
 <body>
     <!--여기는 상단 wifi 시간 배터리 등을 나타냅니다-->
@@ -16,7 +16,7 @@
         </div>
 
         <div class = "status-bar__column">
-            <span>21:23</span>
+            <span>18:43</span>
         </div>
 
         <div class = "status-bar__column">
@@ -29,61 +29,31 @@
 
     <!--여기는 Friends와 아이콘 3개를 나타냅니다-->
     <header class="screen-header">
-        <h1 class="screen-header__title">Friends</h1>
+        <h1 class="screen-header__title">Chats</h1>
         <div class="screen-header__icons">
            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+           <span><i class="fa-solid fa-comment-medical"></i></span>
            <span><i class="fa-solid fa-music"></i></span>
            <span><i class="fa-solid fa-gear"></i></span> 
         </div>
     </header>
 
-    <!--여기는 friend's name display를 나타냅니다-->
-    <a id="friends-display-link">
-        <i class="fa-solid fa-circle-info"></i>
-        Friends's Names Display
-        <i class="fa-solid fa-chevron-right fa-xs"></i>
-    </a>
-
     <!--main은 친구창을 나타냅니다. 친구창은 본인 프로필, 채널, 친구들로 이루어져 있습니다.-->
-    <main class="friends-screen">
+    <main class="main-screen">
         <!-- 본인 프로필을 나타냅니다-->
         <div class ="user-component">
             <div class="user-component__column">
-                <img src="https://newsimg.sedaily.com/2019/04/12/1VHU5WE5IS_2.jpg" class="user-component__avatar user-component__avatar--xl" 
+                <img src="https://newsimg.sedaily.com/2019/04/12/1VHU5WE5IS_2.jpg" class="user-component__avatar user-component__avatar" 
                 />
     
                 <div class="user-component__text">
                     <h4 class="user-component__title">Heung-Min Son</h4>
-                    <!-- <h6 class="user-component__subtitle">Sonny</h6> --> 
+                    <h6 class="user-component__subtitle">Sonny</h6>
                 </div>
             </div>
             <div class="user-component__column"></div>
         </div>
         <!-- 채널 바, 채널, 친구들을 나타냅니다-->
-        <div class="friends-screen__channel">
-            <!--채널 바를 나타냅니다.-->
-            <div class="friends-screen__channel-header">
-                <span>Channel</span>
-                <i class="fas fa-chevron-up fa-xs"></i>
-            </div>
-
-            <!--채널을 나타냅니다-->
-            <div class ="user-component">
-                <div class="user-component__column">
-                    <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/tottenham-hotspur-logo-vera-wahid.jpg" class="user-component__avatar user-component__avatar--sm" 
-                    />
-        
-                    <div class="user-component__text">
-                        <h4 class="user-component__title user-component__title--not--bold">COYS</h4>
-                        <!-- <h6 class="user-component__subtitle">Sonny</h6> --> 
-                    </div>
-                </div>
-                <div class="user-component__column">
-                    <span>2</span>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                </div>
-            </div>
-        </div>
 
     </main>
     
@@ -93,22 +63,22 @@
         <ul class = "nav__list">
             <li class="nav__btn">
                 <a class="nav__link" href="friends.html">
-                    <i class="fa-solid fa-users fa-2x"></i>
+                    <i class="fa-solid fa-user fa-2x"></i>
                 </a>
             </li>
             <li class="nav__btn">
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="chats.html">
                     <span class="nav__notification">1</span>
                     <i class="fa-solid fa-comment fa-2x"></i>
                 </a>
             </li>
             <li class="nav__btn">
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="find.html">
                     <i class="fa-solid fa-magnifying-glass fa-2x"></i>
                 </a>
             </li>
             <li class="nav__btn">
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="more.html">
                     <span class="nav__ellipsis"></span>
                     <i class="fa-solid fa-ellipsis fa-2x"></i>
                 </a>
