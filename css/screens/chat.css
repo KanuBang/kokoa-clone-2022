@@ -45,6 +45,7 @@
 .message-row {
     width: 100%;
     display: flex;
+    margin-bottom: 25px;
 }
 
 .message-row img {
@@ -76,3 +77,27 @@
     opacity: 0.8;
     font-size: 13px;
 }
+
+.message-row--own {
+    justify-content: flex-end;
+}
+
+.message-row--own .message__bubble {
+    background-color: var(--yellow);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 15px;
+    margin-left: 5px;
+}
+/*
+.message-row--own .message__bubble {
+    order: 1;
+}
+.message-row--own .message__time{
+    order: 0;
+}
+flex children에게만 적용되는 order 속성을 이용해서 순서를 바꾸는 방법
+*/
+
+.message-row--own .message__info  {
+    flex-direction: row-reverse;
+} /* flex의 주축 방향을 바꿔서 순서를 바꾸는 방법*/
