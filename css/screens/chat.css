@@ -101,3 +101,72 @@ flex children에게만 적용되는 order 속성을 이용해서 순서를 바�
 .message-row--own .message__info  {
     flex-direction: row-reverse;
 } /* flex의 주축 방향을 바꿔서 순서를 바꾸는 방법*/
+
+.reply {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 25px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.reply .reply__column:nth-child(1) {
+    width:10%;
+}
+
+.reply .reply__column:nth-child(2) {
+    width:90%;
+}
+
+.reply input {
+    padding: 12px;
+    height: 30px;
+    width: 100%;
+    border: var(--main-border);
+    border-radius: 20px;
+}
+
+.reply__column {
+    position: relative;
+}
+
+.reply__column:last-child i,
+.reply__column:last-child button {
+    position:absolute;
+    right: -3px;
+    top: 2px;
+}
+
+.reply__column:last-child > i {
+    right: 40px;
+    top: 10px;
+}
+.reply__column button {
+    background-color: var(--yellow);
+    border:none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.reply__column button:focus,
+.reply__column button:active {
+    outline: none;
+}
+
+.reply i {
+    opacity: 0.8;
+}
+
+.reply__column button i{
+    opacity: 1;
+}
+
+
+
+
+
