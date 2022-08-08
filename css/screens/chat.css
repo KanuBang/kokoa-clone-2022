@@ -1,6 +1,6 @@
 .chat-screen {
     background-color: #abc1d1;
-    height: 1100vh;
+    height: 500vh;
 }
 
 .chat-screen .alt-header,
@@ -25,12 +25,23 @@
     z-index: 1;
 }
 
+@keyframes fadeIn {
+    from{
+        transform: translateY(10px);
+        opacity:0;
+    }
+
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
 .main-chat {
-    margin-top: 120px;
+    margin-top: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 150px;
+    animation: fadeIn 0.8s linear;
 }
 
 .chat__timestamp {
@@ -112,6 +123,7 @@ flex children에게만 적용되는 order 속성을 이용해서 순서를 바�
     padding: 5px 25px;
     align-items: center;
     box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
 }
 
 .reply .reply__column:nth-child(1) {
@@ -128,6 +140,7 @@ flex children에게만 적용되는 order 속성을 이용해서 순서를 바�
     width: 100%;
     border: var(--main-border);
     border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .reply__column {
@@ -166,7 +179,25 @@ flex children에게만 적용되는 order 속성을 이용해서 순서를 바�
     opacity: 1;
 }
 
+.reply .reply__column:first-child,
+.reply .fa-smile-wink,
+.reply button {
+    transition: opacity 0.3s ease-in-out;
+}
 
 
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile-wink,
+.reply:focus-within button {
+    opacity: 0;
+}
 
+.reply input:focus {
+    width: 95vw;
+    transform: translateX(-13%) translateY(-80px);
+}
+
+.reply:focus-within {
+    transform: translateY(80px);
+}
 
