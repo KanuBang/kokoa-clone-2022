@@ -7,14 +7,18 @@
     align-items: center;
     font-weight: 600;
 }
-
+.welcome-header__font {
+    color: gold;
+    font-style: italic;
+    font-family: 'palatino linotype';
+}
 .welcome-header__title {
     margin-bottom: 20px;
-    font-size: 25px;
+    font-size: 50px;
 }
 
 .welcome-header__text {
-    width: 12%;
+    width: 20%;
     opacity: 0.7;
 }
 
@@ -28,6 +32,7 @@
     border: none;
     padding: 15px 0px;
     font-size: 18px;
+    border-radius: 30px;
     border-bottom: 1px solid rgba(0,0,0,0.2);
     margin-bottom: 25px;
     transition: border-color 0.3s ease-in-out;

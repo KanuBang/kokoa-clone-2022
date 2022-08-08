@@ -17,6 +17,9 @@
 @import "screens/more.css";
 @import "screens/settings.css";
 @import "screens/chat.css";
+@import "screens/index.css";
+
+
 
 
 body{
@@ -25,6 +28,7 @@ body{
     font-family: Oswald; 
     height:1000vh;
 }
+
 
 .main-screen{
     padding: 0px var(--horizontal-space);
