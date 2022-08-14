@@ -1,16 +1,29 @@
+body{
+   background: linear-gradient(to right bottom, pink, blue);
+}
+
 .hogwarts-logo {
     display: flex;
     width: 100%;
     justify-content: center;
-    position: relative;
-    top: 60px;
+
 }
 
-
+.welcome-header__font{
+    color:white;
+}
 .hogwarts-logo img {
-    width: 90px;
-    height: 90px;
+    width: 300px;
+    height: 300px;
     opacity: 1;
-    background-color: black;
+}
 
+.welcome-header{
+    position: relative;
+    top:-150px;
+}
+
+#login-form {
+    position: relative;
+    top:-200px;
 }

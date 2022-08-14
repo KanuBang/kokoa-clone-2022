@@ -1,7 +1,7 @@
 #friends-display-link {
     text-align: center;
     display:block;
-    background-color: #fafafa;
+    /*background-color: #fafafa;*/
     padding: 15px 0px;
     font-size:18px;
     margin-bottom:10px;
@@ -41,7 +41,7 @@
 }
 
 #splash-screen {
-    background-color: var(--yellow);
+    background:linear-gradient(to right bottom, blue, white, black);
     position: absolute;
     width: 100vw;
     height: 100vh;
